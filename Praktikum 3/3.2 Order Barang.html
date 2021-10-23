@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Barang</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="OIP.jpg" type="image/x-icon">
+</head>
+
+<body  style="background-color: rgb(255, 248, 238);">
+    <table style="border-style: solid;color: black; padding-top: 2px; padding-bottom: 2px; margin: 30px;
+     padding-left: 80px ;  padding-right: 320px; ">
+        <tr>
+            <td style="padding-right: 60px;">Home </td>
+            <td style="padding-right: 20px;">|</td>
+            <td style="padding-left: 80px">Generate link </td>
+            <td style="padding-left: 40px;"> |</td>
+            <td style="padding-left: 80px">Transaction History </td>
+            <td style="padding-left: 40px;"> |</td>
+            <td style="padding-left: 80px">Policy </td>
+            <td style="padding-left: 40px;">|</td>  
+            <td style="padding-left: 80px">Log Out </td>
+        </tr>
+    </table>
+    
+    <div style="display: flex; gap: 20px; margin-top: 10px; padding: 10px">   
+        <div style="padding: 10px; margin: 10px;"> 
+            <img src="OIP.jpg" alt="kotak" width="200" height="200" >
+            <br>
+            <input type="submit" value="Upload Picture">   
+        </div>
+    
+        <div style="padding-left: 150px;">       
+            <div class="container"> 
+                <form action="formregistrasiproses.php" method="post">
+                    <table>
+                        <tr>
+                            <td> <b> Tittle here </b> </td>
+                            <td>:</td>
+                            <td><input type="text" name="titlehere"></td>
+                        </tr>
+            
+                        <tr>
+                            <td><label> <b> Description </b> </td>
+                            <td>:</td>
+                            <td><textarea name="decription"></textarea></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label> <b>Account Number </b> </label></td>
+                            <td>:</td>
+                            <td><input type="number" name="accountnumber"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td> <b> Bank </b>  </td>
+                            <td>:</td>
+                            <td>
+                                <select name="bank">
+                                <option value="">-== Pilih Disini ==-</option>
+                                <option value="bank mandiri">Bank Mandiri</option>
+                                <option value="bank bri">Bank BRI</option>
+                                <option value="bank bni">Bank BNI</option>
+                                <option value="bank bca">Bank BCA</option>
+                                <option value="bank syariah">BSI</option>
+                            </select>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td> <b> Account Holder </b> </td>
+                            <td>:</td>
+                            <td><input type="text" name="Accountholder"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>  <b>  Transaction </b>  </td>
+                            <td>:</td>
+                            <td>
+                                <select name="transaction" size="1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                </select>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td> <b> *if the transaction is for 3 person, choose 3 from the drop-dwon list  </b>  </td>
+                        </tr>
+                       
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            <font color="green"><input type="checkbox" name="toppings[]" value="red sauce" checked=""> 
+                                send to mobile phone
+                            <br>
+                            <input type="checkbox" name="toppings[]" value="white sauce">
+                                send to email 
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                            <td> <b> Send To Mobile Phone </b> </td>
+                            <td>:</td>
+                            <td><input type="text" name="sendtomobilephone"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td> <b> Send To Email</b> </td>
+                            <td>:</td>
+                            <td><input type="text" name="sentoemail"></td>
+                        </tr>
+                    </table>
+                    
+                        <div style="padding-bottom: 1px; padding-top: 120px; margin-top: 65px; padding-left: 120px; ">
+                        <button
+                        style="border: solid black 3px; height: 30px; padding: 0px 60px; background-color:green; color: white;">
+                        <b>Generate Nobr Link</b></button>
+                       </div>
+                </form>
+            </div>    
+        </div>
+    </div>          
+</body>
+</html>
